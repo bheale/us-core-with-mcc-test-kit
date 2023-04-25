@@ -21,7 +21,7 @@ service.
 - Navigate to `http://localhost`. The US Core with MCC test suite will be available.
 
 ## License
-Copyright 2022 The MITRE Corporation
+Copyright 2022 The MITRE Corporation (orginial US CORE test kit)
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
