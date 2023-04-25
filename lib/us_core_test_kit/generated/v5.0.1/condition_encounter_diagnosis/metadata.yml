@@ -134,7 +134,7 @@
       :eb: MAY
       :ap: MAY
     :values: []
-    :type: dateTime
+    :type: date
     :contains_multiple: false
     :multiple_or: MAY
   :code:

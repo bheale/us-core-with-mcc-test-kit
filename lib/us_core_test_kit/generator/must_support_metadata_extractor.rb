@@ -63,6 +63,7 @@ module USCoreTestKit
       end
 
       def pattern_slices
+		
         must_support_pattern_slice_elements.map do |current_element|
           {
             name: current_element.id,
@@ -157,7 +158,8 @@ module USCoreTestKit
       end
 
       def value_slices
-        must_support_value_slice_elements.map do |current_element|
+
+		must_support_value_slice_elements.map do |current_element|
           {
             name: current_element.id,
             path: current_element.path.gsub("#{resource}.", ''),
@@ -170,7 +172,7 @@ module USCoreTestKit
                 element.id.starts_with?(current_element.id) &&
                   element.path == "#{current_element.path}.#{discriminator.path}"
               end
-
+              puts "#{current_element.path}.#{discriminator.path}"
               {
                 path: discriminator.path,
                 value: fixed_element.fixedUri || fixed_element.fixedCode

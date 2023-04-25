@@ -683,7 +683,7 @@
         :eb: MAY
         :ap: MAY
       :values: []
-      :type: dateTime
+      :type: date
       :contains_multiple: false
       :multiple_or: MAY
     :code:
@@ -990,7 +990,7 @@
         :eb: MAY
         :ap: MAY
       :values: []
-      :type: dateTime
+      :type: date
       :contains_multiple: false
       :multiple_or: MAY
     :code:
@@ -2497,8 +2497,8 @@
       :type: CodeableConcept
       :contains_multiple: false
       :multiple_or: MAY
-  :include_params: []
-  :revincludes:
+  :include_params: &5 []
+  :revincludes: &6
   - Provenance:target
   :required_concepts: []
   :must_supports:
@@ -2513,6 +2513,183 @@
     - :path: target
     - :path: target.dueDate
       :original_path: target.due[x]
+  :mandatory_elements:
+  - Goal.lifecycleStatus
+  - Goal.description
+  - Goal.subject
+  :bindings:
+  - :type: code
+    :strength: required
+    :system: http://hl7.org/fhir/ValueSet/goal-status
+    :path: lifecycleStatus
+  :references:
+  - :path: Goal.subject
+    :profiles:
+    - http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+  - :path: Goal.expressedBy
+    :profiles:
+    - http://hl7.org/fhir/StructureDefinition/Patient
+    - http://hl7.org/fhir/StructureDefinition/Practitioner
+    - http://hl7.org/fhir/StructureDefinition/PractitionerRole
+    - http://hl7.org/fhir/StructureDefinition/RelatedPerson
+  - :path: Goal.addresses
+    :profiles:
+    - http://hl7.org/fhir/StructureDefinition/Condition
+    - http://hl7.org/fhir/StructureDefinition/Observation
+    - http://hl7.org/fhir/StructureDefinition/MedicationStatement
+    - http://hl7.org/fhir/StructureDefinition/NutritionOrder
+    - http://hl7.org/fhir/StructureDefinition/ServiceRequest
+    - http://hl7.org/fhir/StructureDefinition/RiskAssessment
+  - :path: Goal.outcomeReference
+    :profiles:
+    - http://hl7.org/fhir/StructureDefinition/Observation
+  :delayed_references: []
+- :name: MCCGoal
+  :class_name: MccgoalSequence
+  :version: v5.0.1
+  :reformatted_version: v501
+  :resource: Goal
+  :profile_url: http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal
+  :profile_name: Multiple Chronic Condition Care Plan Goal
+  :profile_version: 1.0.0-ballot
+  :title: Multiple Chronic Condition Care Plan Goal
+  :short_description: Verify support for the server capabilities required by the Multiple
+    Chronic Condition Care Plan Goal.
+  :interactions:
+  - :code: create
+    :expectation: MAY
+  - :code: search-type
+    :expectation: SHALL
+  - :code: read
+    :expectation: SHALL
+  - :code: vread
+    :expectation: SHOULD
+  - :code: update
+    :expectation: MAY
+  - :code: patch
+    :expectation: MAY
+  - :code: delete
+    :expectation: MAY
+  - :code: history-instance
+    :expectation: SHOULD
+  - :code: history-type
+    :expectation: MAY
+  :operations: []
+  :searches:
+  - :names:
+    - patient
+    :expectation: SHALL
+    :names_not_must_support_or_mandatory: []
+    :must_support_or_mandatory: true
+  - :expectation: SHOULD
+    :names:
+    - patient
+    - target-date
+    :names_not_must_support_or_mandatory: []
+    :must_support_or_mandatory: true
+  - :expectation: SHOULD
+    :names:
+    - patient
+    - lifecycle-status
+    :names_not_must_support_or_mandatory: []
+    :must_support_or_mandatory: true
+  - :expectation: SHOULD
+    :names:
+    - patient
+    - description
+    :names_not_must_support_or_mandatory: []
+    :must_support_or_mandatory: true
+  :search_definitions:
+    :patient:
+      :paths:
+      - subject
+      :full_paths:
+      - Goal.subject
+      :comparators: {}
+      :values: []
+      :type: Reference
+      :contains_multiple: false
+      :multiple_or: MAY
+    :target-date:
+      :paths:
+      - target.dueDate
+      :full_paths:
+      - Goal.target.dueDate
+      :comparators:
+        :eq: MAY
+        :ne: MAY
+        :gt: SHALL
+        :ge: SHALL
+        :lt: SHALL
+        :le: SHALL
+        :sa: MAY
+        :eb: MAY
+        :ap: MAY
+      :values: []
+      :type: date
+      :contains_multiple: false
+      :multiple_or: MAY
+    :lifecycle-status:
+      :paths:
+      - lifecycleStatus
+      :full_paths:
+      - Goal.lifecycleStatus
+      :comparators: {}
+      :values:
+      - proposed
+      - planned
+      - accepted
+      - active
+      - on-hold
+      - completed
+      - cancelled
+      - entered-in-error
+      - rejected
+      :type: code
+      :contains_multiple: false
+      :multiple_or: MAY
+    :description:
+      :paths:
+      - description
+      :full_paths:
+      - Goal.description
+      :comparators: {}
+      :values: []
+      :type: CodeableConcept
+      :contains_multiple: false
+      :multiple_or: MAY
+  :include_params: *5
+  :revincludes: *6
+  :required_concepts: []
+  :must_supports:
+    :extensions:
+    - :id: Goal.extension:goal-acceptance
+      :url: http://hl7.org/fhir/StructureDefinition/goal-acceptance
+    - :id: Goal.extension:reasonRejected
+      :url: http://hl7.org/fhir/StructureDefinition/goal-reasonRejected
+    - :id: Goal.extension:relationship
+      :url: http://hl7.org/fhir/StructureDefinition/goal-relationship
+    :slices: []
+    :elements:
+    - :path: lifecycleStatus
+    - :path: achievementStatus
+    - :path: priority
+    - :path: description
+    - :path: subject
+      :types:
+      - Reference
+    - :path: target
+    - :path: target.dueDate
+      :original_path: target.due[x]
+    - :path: expressedBy
+      :types:
+      - Reference
+    - :path: addresses
+      :types:
+      - Reference
+    - :path: outcomeReference
+      :types:
+      - Reference
   :mandatory_elements:
   - Goal.lifecycleStatus
   - Goal.description
@@ -3322,8 +3499,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: &5 []
-  :revincludes: &6
+  :include_params: &7 []
+  :revincludes: &8
   - Provenance:target
   :required_concepts: []
   :must_supports:
@@ -3598,8 +3775,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -3852,8 +4029,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -4106,8 +4283,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -4354,8 +4531,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -4609,8 +4786,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -4867,8 +5044,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -5123,8 +5300,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -5416,8 +5593,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -5651,8 +5828,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -5871,8 +6048,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -6129,8 +6306,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -6387,8 +6564,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -6642,8 +6819,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -6921,8 +7098,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -7610,8 +7787,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -7839,8 +8016,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -8095,8 +8272,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []
@@ -8350,8 +8527,8 @@
       :type: code
       :contains_multiple: false
       :multiple_or: SHALL
-  :include_params: *5
-  :revincludes: *6
+  :include_params: *7
+  :revincludes: *8
   :required_concepts: []
   :must_supports:
     :extensions: []

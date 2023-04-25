@@ -1,7 +1,7 @@
-# US Core Test Kit
+# US Core Test Kit with MCC ecare IG tests
 
 This is an [Inferno](https://github.com/inferno-community/inferno-core) test kit
-for the US Core Implementation Guide
+for the US Core Implementation Guide with MCC eCare Implementation Guide tests
 [v3.1.1](http://hl7.org/fhir/us/core/STU3.1.1/),
 [v4.0.0](http://hl7.org/fhir/us/core/STU4/), and
 [v5.0.1](http://hl7.org/fhir/us/core/STU5.0.1/)

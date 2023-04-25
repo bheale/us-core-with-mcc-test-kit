@@ -63,7 +63,7 @@ module USCoreTestKit
         ].freeze,
         'DocumentReference' => ['http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference'].freeze,
         'Encounter' => ['http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'].freeze,
-        'Goal' => ['http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal'].freeze,
+        'Goal' => ['http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal','http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal'].freeze,
         'Immunization' => ['http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization'].freeze,
         'Location' => ['http://hl7.org/fhir/us/core/StructureDefinition/us-core-location'].freeze,
         'Medication' => ['http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication'].freeze,

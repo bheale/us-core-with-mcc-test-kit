@@ -16,6 +16,7 @@ require_relative 'diagnostic_report_lab_group'
 require_relative 'document_reference_group'
 require_relative 'encounter_group'
 require_relative 'goal_group'
+require_relative 'goal_groupMCC'
 require_relative 'immunization_group'
 require_relative 'medication_request_group'
 require_relative 'observation_lab_group'
@@ -48,10 +49,10 @@ require_relative 'related_person_group'
 module USCoreTestKit
   module USCoreV501
     class USCoreTestSuite < Inferno::TestSuite
-      title 'US Core v5.0.1'
+      title 'US Core v5.0.1 and MCC Goal'
       description %(
-        The US Core Test Kit tests systems for their conformance to the [US Core
-        Implementation Guide](http://hl7.org/fhir/us/core/STU5.0.1).
+        The US Core and MCC Goal Test Kit tests systems for their conformance to the [US Core
+        Implementation Guide](http://hl7.org/fhir/us/core/STU5.0.1) and [MCC Goal](http://hl7.org/fhir/us/mcc/2023Jan/StructureDefinition-MCCGoal.html).
 
         Resources are validated with the FHIR Java validator using `tx.fhir.org`
         as the terminology server. Users should note that the although the ONC
@@ -118,6 +119,7 @@ module USCoreTestKit
       group from: :us_core_v501_document_reference
       group from: :us_core_v501_encounter
       group from: :us_core_v501_goal
+      group from: :us_core_v501_goalMCC
       group from: :us_core_v501_immunization
       group from: :us_core_v501_medication_request
       group from: :us_core_v501_observation_lab

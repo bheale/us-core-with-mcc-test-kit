@@ -27,7 +27,7 @@ module USCoreTestKit
         tar = Gem::Package::TarReader.new(
           Zlib::GzipReader.open(ig_file_name)
         )
-
+		
         tar.each do |entry|
           next if entry.directory?
 
@@ -41,13 +41,13 @@ module USCoreTestKit
             resource = FHIR.from_contents(entry.read)
             next if resource.nil?
           rescue StandardError
-            puts "#{file_name} does not appear to be a FHIR resource."
+            #puts "#{file_name} does not appear to be a FHIR resource."
             next
           end
-
+		  #puts "#{resource.id} reading right now."
           ig_resources.add(resource)
         end
-
+		#puts ig_resources.ig.inspect
         ig_resources
       end
 
@@ -62,7 +62,7 @@ module USCoreTestKit
             next if resource.nil?
           rescue StandardError
             file_name = file_path.split('/').last
-            puts "#{file_name} does not appear to be a FHIR resource."
+            #puts "#{file_name} does not appear to be a FHIR resource."
             next
           end
 
