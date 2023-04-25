@@ -18,7 +18,7 @@ service.
 - Clone this repo.
 - Run `setup.sh` in this repo.
 - Run `run.sh` in this repo.
-- Navigate to `http://localhost`. The US Core test suite will be available.
+- Navigate to `http://localhost`. The US Core with MCC test suite will be available.
 
 ## License
 Copyright 2022 The MITRE Corporation
