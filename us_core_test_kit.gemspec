@@ -3,11 +3,11 @@ require_relative 'lib/us_core_test_kit/version'
 Gem::Specification.new do |spec|
   spec.name          = 'us_core_test_kit'
   spec.version       = USCoreTestKit::VERSION
-  spec.authors       = ['Stephen MacVicar']
-  spec.email         = ['inferno@groups.mitre.org']
-  spec.summary       = 'US Core Inferno tests'
-  spec.description   = 'US Core Inferno tests'
-  spec.homepage      = 'https://github.com/inferno_framework/us-core-test-kit'
+  spec.authors       = ['Bret Heale']
+  spec.email         = ['bheale@humanizedhealthconsulting.com']
+  spec.summary       = 'US Core and MCC Inferno tests'
+  spec.description   = 'US Core and MCC Inferno tests'
+  spec.homepage      = 'https://github.com/bheale/us-core-with-mcc-test-kit'
   spec.license       = 'Apache-2.0'
   spec.add_runtime_dependency 'inferno_core', '>= 0.4.2'
   spec.add_runtime_dependency 'tls_test_kit', '~> 0.2.0'
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'webmock', '~> 3.11'
   spec.required_ruby_version = Gem::Requirement.new('>= 3.1.2')
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/inferno_framework/us-core-test-kit'
+  spec.metadata['source_code_uri'] = 'https://github.com/bheale/us-core-with-mcc-test-kit'
   spec.files = [
     Dir['lib/**/*.rb'],
     Dir['lib/**/*.json'],
