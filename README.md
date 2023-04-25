@@ -6,8 +6,11 @@ included from the ballot of http://hl7.org/fhir/us/mcc/2023Jan/index.html.
 The tests also include US CORE [v5.0.1](http://hl7.org/fhir/us/core/STU5.0.1/)
 
 Note, this repo is intended for the May 2023 Connectathon. There's no guarantee past the 
-May 2023 Connectathon that it will be kept current. As we borrowed heavily from the 
-US CORE test kits we owe thanks to the hard work of the US CORE crew (and Inferno team too).
+May 2023 Connectathon that it will be kept current. However, come back frequently till then for
+updates. 
+
+We borrowed heavily from the US CORE test kits we owe gratitude and thanks to the hard work of
+the US CORE crew (and Inferno team too).
 
 It is highly recommended that you use [Docker](https://www.docker.com/) to run
 these tests so that you don't have to configure ruby and the FHIR validator
