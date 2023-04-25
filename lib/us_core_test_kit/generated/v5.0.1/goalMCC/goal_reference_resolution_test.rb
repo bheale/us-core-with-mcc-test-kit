@@ -7,7 +7,7 @@ module USCoreTestKit
       include USCoreTestKit::ReferenceResolutionTest
       include ResourceList
 
-      title 'MustSupport references within Goal resources are valid'
+      title 'MustSupport references within Goal resources are valid. Specific to Multiple Chronic Condition Care Plan Goal Profile'
       description %(
         This test will attempt to read external references provided within elements
         marked as 'MustSupport', if any are available.

@@ -9,7 +9,7 @@ module USCoreTestKit
       description %(
         MCC Responders SHALL be capable of populating all data elements as
         part of the query results as specified by the US Core Server Capability
-        Statement. This test will look through the Goal resources
+        Statement and the [MCC Goal Profile](http://hl7.org/fhir/us/mcc/2023Jan/StructureDefinition-MCCGoal.html). This test will look through the Goal resources
         found previously for the following must support elements:
 
         * Goal.achievementStatus

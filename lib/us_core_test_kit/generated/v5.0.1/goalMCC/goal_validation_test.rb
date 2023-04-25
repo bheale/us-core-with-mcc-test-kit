@@ -6,7 +6,7 @@ module USCoreTestKit
       include USCoreTestKit::ValidationTest
 
       id :us_core_v501_goalMCC_validation_test
-      title 'Goal resources returned during previous tests conform to the Multiple Chronic Condition Care Plan Goal'
+      title 'Goal resources returned during previous tests conform to the Multiple Chronic Condition Care Plan Goal Profile'
       description %(
 This test verifies resources returned from the first search conform to
 the [Multiple Chronic Condition Care Plan Goal](http://hl7.org/fhir/us/mcc/2023Jan/StructureDefinition-MCCGoal.html).
