@@ -9,7 +9,7 @@ Note, this repo is intended for the May 2023 Connectathon. There's no guarantee 
 May 2023 Connectathon that it will be kept current. However, come back frequently till then for
 updates. 
 
-We borrowed heavily from the US CORE test kits we owe gratitude and thanks to the hard work of
+As we borrowed heavily from the US CORE test kits, we owe gratitude and thanks to the hard work of
 the US CORE crew (and Inferno team too).
 
 It is highly recommended that you use [Docker](https://www.docker.com/) to run
