@@ -9,7 +9,7 @@ module USCoreTestKit
       title 'Goal resources returned during previous tests conform to the Multiple Chronic Condition Care Plan Goal'
       description %(
 This test verifies resources returned from the first search conform to
-the [Multiple Chronic Condition Care Plan Goal](http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal).
+the [Multiple Chronic Condition Care Plan Goal](http://hl7.org/fhir/us/mcc/2023Jan/StructureDefinition-MCCGoal.html).
 Systems must demonstrate at least one valid example in order to pass this test.
 
 It verifies the presence of mandatory elements and that elements with

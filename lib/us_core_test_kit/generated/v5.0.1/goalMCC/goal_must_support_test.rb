@@ -5,9 +5,9 @@ module USCoreTestKit
     class GoalMustSupportTest < Inferno::Test
       include USCoreTestKit::MustSupportTest
 
-      title 'All must support elements are provided in the Goal resources returned'
+      title 'All must support elements are provided in the Multiple Chronic Condition Care Plan Goal resources returned'
       description %(
-        MCC US Core Responders SHALL be capable of populating all data elements as
+        MCC Responders SHALL be capable of populating all data elements as
         part of the query results as specified by the US Core Server Capability
         Statement. This test will look through the Goal resources
         found previously for the following must support elements:

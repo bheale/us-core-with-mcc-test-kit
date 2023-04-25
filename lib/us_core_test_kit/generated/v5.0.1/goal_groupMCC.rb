@@ -19,7 +19,7 @@ module USCoreTestKit
 The Multiple Chronic Condition Care Plan Goal sequence verifies that the system under test is
 able to provide correct responses for MCC Goal queries. These queries
 must contain resources conforming to the Multiple Chronic Condition Care Plan Goal as
-specified in the MCC Implementation Guide.
+specified in the [MCC Implementation Guide](http://hl7.org/fhir/us/mcc/2023Jan/StructureDefinition-MCCGoal.html).
 
 # Testing Methodology
 ## Searching
