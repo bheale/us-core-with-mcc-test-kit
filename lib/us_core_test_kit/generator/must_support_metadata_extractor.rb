@@ -172,7 +172,7 @@ module USCoreTestKit
                 element.id.starts_with?(current_element.id) &&
                   element.path == "#{current_element.path}.#{discriminator.path}"
               end
-              puts "#{current_element.path}.#{discriminator.path}"
+              #puts "#{current_element.path}.#{discriminator.path}"
               {
                 path: discriminator.path,
                 value: fixed_element.fixedUri || fixed_element.fixedCode
