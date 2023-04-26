@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Patient",
+  "id" : "cc-pat-pnoelle",
+  "meta" : {
+    "versionId" : "6",
+    "lastUpdated" : "2022-08-02T18:25:58.212+00:00",
+    "source" : "#JCaZBT444ZLpgXTH",
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <div class=\"hapiHeaderText\">Patricia \n                <b>NOELLE </b>\n            </div>\n            <table class=\"hapiPropertyTable\">\n                <tbody>\n                    <tr>\n                        <td>Identifier</td>\n                        <td>103270456</td>\n                    </tr>\n                    <tr>\n                        <td>Address</td>\n                        <td>\n                            <span>49 Meadow St </span>\n                            <br/>\n                            <span>Mounds </span>\n                            <span>OK </span>\n                            <span>US </span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>Date of birth</td>\n                        <td>\n                            <span>15 January 1955</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR",
+        "display" : "Medical Record Number"
+      }],
+      "text" : "Medical Record Number"
+    },
+    "system" : "http://hospital.smarthealthit.org",
+    "value" : "103270456"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Noelle",
+    "given" : ["Patricia"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "555-555-5555",
+    "use" : "home"
+  }],
+  "gender" : "female",
+  "birthDate" : "1955-01-15",
+  "address" : [{
+    "line" : ["49 Meadow St"],
+    "city" : "Mounds",
+    "state" : "OK",
+    "postalCode" : "74047",
+    "country" : "US"
+  }]
+}

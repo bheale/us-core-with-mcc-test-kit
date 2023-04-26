@@ -1,0 +1,699 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [ {
+    "fullUrl": "cc-pat-pnoelle2", "resource":
+    
+{
+  "resourceType" : "Patient",
+  "id" : "cc-pat-pnoelle2",
+  "meta" : {
+    "versionId" : "6",
+    "lastUpdated" : "2022-08-02T18:25:58.212+00:00",
+    "source" : "#JCaZBT444ZLpgXTH",
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <div class=\"hapiHeaderText\">Patricia \n                <b>NOELLE </b>\n            </div>\n            <table class=\"hapiPropertyTable\">\n                <tbody>\n                    <tr>\n                        <td>Identifier</td>\n                        <td>103270456</td>\n                    </tr>\n                    <tr>\n                        <td>Address</td>\n                        <td>\n                            <span>49 Meadow St </span>\n                            <br/>\n                            <span>Mounds </span>\n                            <span>OK </span>\n                            <span>US </span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>Date of birth</td>\n                        <td>\n                            <span>15 January 1955</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR",
+        "display" : "Medical Record Number"
+      }],
+      "text" : "Medical Record Number"
+    },
+    "system" : "http://hospital.smarthealthit.org",
+    "value" : "103270456"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Noelle",
+    "given" : ["Patricia"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "555-555-5555",
+    "use" : "home"
+  }],
+  "gender" : "female",
+  "birthDate" : "1955-01-15",
+  "address" : [{
+    "line" : ["49 Meadow St"],
+    "city" : "Mounds",
+    "state" : "OK",
+    "postalCode" : "74047",
+    "country" : "US"
+  }]
+},
+    "request": {
+      "method": "POST",
+      "url": "Patient"
+    }
+  }, {
+    "resource": {
+        "resourceType" : "Condition",
+        "id" : "ConditionCKD2",
+        "meta" : {
+          "versionId" : "5",
+          "lastUpdated" : "2022-06-17T23:22:56.193+00:00",
+          "source" : "#5R98DWXS6a48AGkD",
+          "profile" : ["http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"]
+        },
+        "text" : {
+          "status" : "extensions",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ConditionCKD2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;ConditionCKD2&quot; Version &quot;5&quot; Updated &quot;2022-06-17 23:22:56+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #5R98DWXS6a48AGkD!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MCCChronicDisease.html\">Multiple Chronic Condition Care Plan Chronic Disease Conditions</a></p></div><p><b>pertains to goal</b>: <a href=\"Goal-HPT-WNL.html\">Goal/HPT-WNL</a></p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Problem <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item &quot;Problem List Item&quot;)</span></p><p><b>severity</b>: Severe <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#24484000)</span></p><p><b>code</b>: Chronic kidney disease stage 3B (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#700379002)</span></p><p><b>subject</b>: <a href=\"Patient-cc-pat-pnoelle2.html\">Patient/cc-pat-pnoelle2: Patricia Noelle</a> &quot; NOELLE&quot;</p><p><b>onset</b>: 52 years<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></p><p><b>recordedDate</b>: 2018-12-01</p><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a href=\"FamilyMemberHistory-father.html\">FamilyMemberHistory/father: Father had Chronic Kidney disease</a>, <a href=\"Procedure-Dialysis.html\">Procedure/Dialysis: Patient receives regular dialysis</a>, <a href=\"Observation-bunMCC.html\">Observation/bunMCC: BUN is 24 mg/dL</a></td></tr></table></div>"
+        },
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
+          "valueReference" : {
+            "reference" : "Goal/HPT-WNL"
+          }
+        }],
+        "clinicalStatus" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+            "code" : "active",
+            "display" : "Active"
+          }],
+          "text" : "Active"
+        },
+        "verificationStatus" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+            "code" : "confirmed"
+          }]
+        },
+        "category" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+            "code" : "problem-list-item",
+            "display" : "Problem List Item"
+          }],
+          "text" : "Problem"
+        }],
+        "severity" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "24484000",
+            "display" : "Severe"
+          }]
+        },
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "700379002",
+            "display" : "Chronic kidney disease stage 3B (disorder)"
+          }]
+        },
+        "subject" : {
+          "reference" : "Patient/cc-pat-pnoelle2",
+          "display" : "Patricia Noelle"
+        },
+        "onsetAge" : {
+          "value" : 52,
+          "unit" : "years",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "a"
+        },
+        "recordedDate" : "2018-12-01",
+        "evidence" : [{
+          "detail" : [{
+            "reference" : "FamilyMemberHistory/father",
+            "display" : "Father had Chronic Kidney disease"
+          },
+          {
+            "reference" : "Procedure/Dialysis",
+            "display" : "Patient receives regular dialysis"
+          },
+          {
+            "reference" : "Observation/bunMCC",
+            "display" : "BUN is 24 mg/dL"
+          }]
+        }]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    
+    {
+        "resource": {
+
+
+        "resourceType" : "Practitioner",
+        "id" : "practitionerMCC-3",
+        "meta" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+            "valueString" : "PractitionerMCC-3"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+            "valueMarkdown" : "This is a practitioner 1 example for the *US Core Practitioner Profile*."
+          }],
+          "versionId" : "2",
+          "lastUpdated" : "2022-04-21T20:04:20.639+00:00",
+          "source" : "#PFl2LJ5HsUkESlP1",
+          "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitionerMCC-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitionerMCC-3&quot; Version &quot;2&quot; Updated &quot;2022-04-21 20:04:20+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #PFl2LJ5HsUkESlP1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html\">US Core Practitioner Profile</a></p></div><p><b>identifier</b>: id: 9941339108, id: 25456</p><p><b>name</b>: Peter Primary </p><p><b>address</b>: 1003 Healthcare Drive Amherst MA 01002 (HOME)</p></div>"
+        },
+        "identifier" : [{
+          "system" : "http://hl7.org.fhir/sid/us-npi",
+          "value" : "9941339108"
+        },
+        {
+          "system" : "http://www.acme.org/practitioners",
+          "value" : "25456"
+        }],
+        "name" : [{
+          "family" : "Primary",
+          "given" : ["Peter"],
+          "prefix" : ["Dr"]
+        }],
+        "address" : [{
+          "use" : "home",
+          "line" : ["1003 Healthcare Drive"],
+          "city" : "Amherst",
+          "state" : "MA",
+          "postalCode" : "01002"
+        }]
+      },
+      
+    "request": {
+      "method": "POST",
+      "url": "Practitioner"
+    }
+},
+{
+    "resource": {
+        
+            "resourceType" : "Observation",
+            "id" : "MCCweight",
+            "meta" : {
+              "extension" : [{
+                "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+                "valueString" : "Weight Example"
+              },
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+                "valueMarkdown" : "This is a weight example for the *Vitalsigns Profile*."
+              }],
+              "versionId" : "2",
+              "lastUpdated" : "2022-05-19T22:28:38.017+00:00",
+              "source" : "#PFPwMgIoicORI1Kp",
+              "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"]
+            },
+            "text" : {
+              "status" : "generated",
+              "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"MCCweight\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;MCCweight&quot; Version &quot;2&quot; Updated &quot;2022-05-19 22:28:38+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #PFPwMgIoicORI1Kp!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-body-weight.html\">US Core Body Weight Profile</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: weight <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#29463-7 &quot;Body Weight&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-cc-pat-pnoelle2.html\">Patient/cc-pat-pnoelle2: Patricia Noelle</a> &quot; NOELLE&quot;</p><p><b>encounter</b>: <span>: GP Visit</span></p><p><b>effective</b>: 1999-07-02</p><p><b>value</b>: 165 Pounds<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code [lb_av] = '[lb_av]')</span></p></div>"
+            },
+            "status" : "final",
+            "category" : [{
+              "coding" : [{
+                "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code" : "vital-signs",
+                "display" : "Vital Signs"
+              }],
+              "text" : "Vital Signs"
+            }],
+            "code" : {
+              "coding" : [{
+                "system" : "http://loinc.org",
+                "code" : "29463-7",
+                "display" : "Body Weight"
+              }],
+              "text" : "weight"
+            },
+            "subject" : {
+              "reference" : "Patient/cc-pat-pnoelle2",
+              "display" : "Patricia Noelle"
+            },
+            "encounter" : {
+              "display" : "GP Visit"
+            },
+            "effectiveDateTime" : "1999-07-02",
+            "valueQuantity" : {
+              "value" : 165,
+              "unit" : "Pounds",
+              "system" : "http://unitsofmeasure.org",
+              "code" : "[lb_av]"
+            }
+          },
+      
+          "request": {
+            "method": "POST",
+            "url": "Observation"
+          }
+      },
+      {
+        "resource": 
+            {
+                "resourceType" : "Goal",
+                "id" : "WGT-loss",
+                "meta" : {
+                  "versionId" : "9",
+                  "lastUpdated" : "2022-08-02T18:25:27.359+00:00",
+                  "source" : "#Co3eBzwkPfsp7Smu",
+                  "profile" : ["http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"]
+                },
+                "text" : {
+                  "status" : "generated",
+                  "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Goal</b><a name=\"WGT-loss\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Goal &quot;WGT-loss&quot; Version &quot;9&quot; Updated &quot;2022-08-02 18:25:27+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #Co3eBzwkPfsp7Smu!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MCCGoal.html\">Multiple Chronic Condition Care Plan Goal</a></p></div><p><b>lifecycleStatus</b>: active</p><p><b>category</b>: Dietary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-goal-category.html\">Goal category</a>#dietary)</span></p><p><b>priority</b>: high <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html\">Goal priority</a>#high-priority &quot;High Priority&quot;)</span></p><p><b>description</b>: Target weight is 150 to 155 lbs. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#43664005 &quot;Normal weight&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-cc-pat-pnoelle2.html\">Patient/cc-pat-pnoelle2: Patricia Noelle</a> &quot; NOELLE&quot;</p><p><b>start</b>: 2019-10-14</p><p><b>statusDate</b>: 2019-10-14</p><p><b>expressedBy</b>: <a href=\"Patient-cc-pat-pnoelle2.html\">Patient/cc-pat-pnoelle2: Patricia Noelle</a> &quot; NOELLE&quot;</p></div>"
+                },
+                "lifecycleStatus" : "active",
+                "category" : [{
+                  "coding" : [{
+                    "system" : "http://terminology.hl7.org/CodeSystem/goal-category",
+                    "code" : "dietary"
+                  }]
+                }],
+                "priority" : {
+                  "coding" : [{
+                    "system" : "http://terminology.hl7.org/CodeSystem/goal-priority",
+                    "code" : "high-priority",
+                    "display" : "High Priority"
+                  }],
+                  "text" : "high"
+                },
+                "description" : {
+                  "coding" : [{
+                    "system" : "http://snomed.info/sct",
+                    "code" : "43664005",
+                    "display" : "Normal weight"
+                  }],
+                  "text" : "Target weight is 150 to 155 lbs."
+                },
+                "subject" : {
+                  "reference" : "Patient/cc-pat-pnoelle2",
+                  "display" : "Patricia Noelle"
+                },
+                "startDate" : "2019-10-14",
+                "statusDate" : "2019-10-14",
+                "expressedBy" : {
+                  "reference" : "Patient/cc-pat-pnoelle2",
+                  "display" : "Patricia Noelle"
+                }
+              },
+      
+              "request": {
+                "method": "POST",
+                "url": "Goal"
+              }
+          },
+          {
+            "resource": 
+            {
+                "resourceType" : "Goal",
+                "id" : "HPT-WNL",
+                "meta" : {
+                  "versionId" : "5",
+                  "lastUpdated" : "2022-06-02T23:34:46.692+00:00",
+                  "source" : "#2FWI9BsC94EqeXTg",
+                  "profile" : ["http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"]
+                },
+                "text" : {
+                  "status" : "extensions",
+                  "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Goal</b><a name=\"HPT-WNL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Goal &quot;HPT-WNL&quot; Version &quot;5&quot; Updated &quot;2022-06-02 23:34:46+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #2FWI9BsC94EqeXTg!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MCCGoal.html\">Multiple Chronic Condition Care Plan Goal</a></p></div><blockquote><p><b>Goal acceptance</b></p><p><b>value</b>: <a href=\"Patient-cc-pat-pnoelle2.html\">Patient/cc-pat-pnoelle2</a> &quot; NOELLE&quot;</p><p><b>value</b>: agree</p><p><b>value</b>: High Priority <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html\">Goal priority</a>#high-priority)</span></p></blockquote><blockquote><p><b>Goal acceptance</b></p><p><b>value</b>: <a href=\"Practitioner-practitionerMCC-3.html\">Practitioner/practitionerMCC-3</a> &quot; PRIMARY&quot;</p><p><b>value</b>: agree</p><p><b>value</b>: High Priority <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html\">Goal priority</a>#high-priority)</span></p></blockquote><blockquote><p><b>related goal</b></p><p><b>value</b>: This goal relates to the Weight loss goal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-goal-relationship-type.html\">GoalRelationshipType</a>#other)</span></p><p><b>value</b>: <a href=\"Goal-WGT-loss.html\">Goal/WGT-loss</a></p></blockquote><p><b>lifecycleStatus</b>: active</p><p><b>priority</b>: high <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html\">Goal priority</a>#high-priority &quot;High Priority&quot;)</span></p><p><b>description</b>: Target Systolic Blood pressure between 110 and 140 mmHg. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#271651005 &quot;Stable blood pressure&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-cc-pat-pnoelle2.html\">Patient/cc-pat-pnoelle2: Patricia Noelle</a> &quot; NOELLE&quot;</p><p><b>start</b>: 2019-10-14</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td><td><b>Due[x]</b></td></tr><tr><td>*</td><td>Systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></td><td>110-140 lbs</td><td>2020-04-05</td></tr></table><p><b>statusDate</b>: 2019-10-14</p><p><b>statusReason</b>: Patient knows that normal blood pressure is important for CKD, Hypertension and diabetes control.</p><p><b>expressedBy</b>: <a href=\"Patient-cc-pat-pnoelle2.html\">Patient/cc-pat-pnoelle2: Patricia Noelle</a> &quot; NOELLE&quot;</p><p><b>addresses</b>: <a href=\"Condition-ConditionCKD2.html\">Condition/ConditionCKD2: chronic kidney disease condition</a></p><p><b>outcomeReference</b>: <a href=\"Observation-MCCweight.html\">Observation/MCCweight: Body Weight Measured - 165 Pounds</a></p></div>"
+                },
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/goal-acceptance",
+                  "extension" : [{
+                    "url" : "individual",
+                    "valueReference" : {
+                      "reference" : "Patient/cc-pat-pnoelle2"
+                    }
+                  },
+                  {
+                    "url" : "status",
+                    "valueCode" : "agree"
+                  },
+                  {
+                    "url" : "priority",
+                    "valueCodeableConcept" : {
+                      "coding" : [{
+                        "system" : "http://terminology.hl7.org/CodeSystem/goal-priority",
+                        "code" : "high-priority"
+                      }]
+                    }
+                  }]
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/goal-acceptance",
+                  "extension" : [{
+                    "url" : "individual",
+                    "valueReference" : {
+                      "reference" : "Practitioner/practitionerMCC-3"
+                    }
+                  },
+                  {
+                    "url" : "status",
+                    "valueCode" : "agree"
+                  },
+                  {
+                    "url" : "priority",
+                    "valueCodeableConcept" : {
+                      "coding" : [{
+                        "system" : "http://terminology.hl7.org/CodeSystem/goal-priority",
+                        "code" : "high-priority"
+                      }]
+                    }
+                  }]
+                },
+                {
+                  "url" : "http://hl7.org/fhir/StructureDefinition/goal-relationship",
+                  "extension" : [{
+                    "url" : "type",
+                    "valueCodeableConcept" : {
+                      "coding" : [{
+                        "system" : "http://terminology.hl7.org/CodeSystem/goal-relationship-type",
+                        "code" : "other"
+                      }],
+                      "text" : "This goal relates to the Weight loss goal"
+                    }
+                  },
+                  {
+                    "url" : "target",
+                    "valueReference" : {
+                      "reference" : "Goal/WGT-loss"
+                    }
+                  }]
+                }],
+                "lifecycleStatus" : "active",
+                "priority" : {
+                  "coding" : [{
+                    "system" : "http://terminology.hl7.org/CodeSystem/goal-priority",
+                    "code" : "high-priority",
+                    "display" : "High Priority"
+                  }],
+                  "text" : "high"
+                },
+                "description" : {
+                  "coding" : [{
+                    "system" : "http://snomed.info/sct",
+                    "code" : "271651005",
+                    "display" : "Stable blood pressure"
+                  }],
+                  "text" : "Target Systolic Blood pressure between 110 and 140 mmHg."
+                },
+                "subject" : {
+                  "reference" : "Patient/cc-pat-pnoelle2",
+                  "display" : "Patricia Noelle"
+                },
+                "startDate" : "2019-10-14",
+                "target" : [{
+                  "measure" : {
+                    "coding" : [{
+                      "system" : "http://loinc.org",
+                      "code" : "8480-6",
+                      "display" : "Systolic blood pressure"
+                    }]
+                  },
+                  "detailRange" : {
+                    "low" : {
+                      "value" : 110,
+                      "unit" : "lbs",
+                      "system" : "http://unitsofmeasure.org",
+                      "code" : "mm[Hg]"
+                    },
+                    "high" : {
+                      "value" : 140,
+                      "unit" : "lbs",
+                      "system" : "http://unitsofmeasure.org",
+                      "code" : "mm[Hg]"
+                    }
+                  },
+                  "dueDate" : "2020-04-05"
+                }],
+                "statusDate" : "2019-10-14",
+                "statusReason" : "Patient knows that normal blood pressure is important for CKD, Hypertension and diabetes control.",
+                "expressedBy" : {
+                  "reference" : "Patient/cc-pat-pnoelle2",
+                  "display" : "Patricia Noelle"
+                },
+                "addresses" : [{
+                  "reference" : "Condition/ConditionCKD2",
+                  "display" : "chronic kidney disease condition"
+                }],
+                "outcomeReference" : [{
+                  "reference" : "Observation/MCCweight",
+                  "display" : "Body Weight Measured - 165 Pounds"
+                }]
+              },
+      
+              "request": {
+                "method": "POST",
+                "url": "Goal"
+              }
+          },
+		  {"resource":
+			  {
+  "resourceType" : "Observation",
+  "id" : "bunMCC",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "BUN Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is a BUN example for the *US Core Observation Lab Profile*."
+    }],
+    "versionId" : "4",
+    "lastUpdated" : "2022-05-18T23:37:12.617+00:00",
+    "source" : "#qAUGMmCEAqCZRmKl",
+    "profile" : ["http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"bunMCC\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;bunMCC&quot; Version &quot;4&quot; Updated &quot;2022-05-18 23:37:12+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #qAUGMmCEAqCZRmKl!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MCCLaboratoryResultObservation.html\">Multiple Chronic Condition Care Plan Laboratory Result Observation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: BUN SerPl-mCnc <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#3094-0)</span></p><p><b>subject</b>: <a href=\"Patient-cc-pat-pnoelle.html\">Patient/cc-pat-pnoelle: Amy Shaw</a> &quot; NOELLE&quot;</p><p><b>effective</b>: 2022-05-05</p><p><b>value</b>: 24 mg/dL</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>5 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg/dL = 'mg/dL')</span></td><td>20 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg/dL = 'mg/dL')</span></td><td>Treatment Range <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-referencerange-meaning.html\">Observation Reference Range Meaning Codes</a>#treatment)</span></td></tr></table></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }],
+    "text" : "Laboratory"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "3094-0",
+      "display" : "BUN SerPl-mCnc"
+    }],
+    "text" : "BUN SerPl-mCnc"
+  },
+  "subject" : {
+    "reference" : "Patient/cc-pat-pnoelle2",
+    "display" : "Amy Shaw"
+  },
+  "effectiveDateTime" : "2022-05-05",
+  "valueQuantity" : {
+    "value" : 24,
+    "unit" : "mg/dL",
+    "system" : "http://unitsofmeasure.org"
+  },
+  "referenceRange" : [{
+    "low" : {
+      "value" : 5,
+      "unit" : "mg/dL",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg/dL"
+    },
+    "high" : {
+      "value" : 20,
+      "unit" : "mg/dL",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg/dL"
+    },
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+        "code" : "treatment",
+        "display" : "Treatment Range"
+      }],
+      "text" : "Treatment Range"
+    }
+  }]
+},
+      
+              "request": {
+                "method": "POST",
+                "url": "Observation"
+              }
+          },
+		  { "resource":
+		  {
+  "resourceType" : "FamilyMemberHistory",
+  "id" : "father",
+  "meta" : {
+    "versionId" : "11",
+    "lastUpdated" : "2022-11-17T22:02:53.691+00:00",
+    "source" : "#SAeRVf4viOeLzIXn",
+    "profile" : ["http://hl7.org/fhir/us/mcc/StructureDefinition/MCCFamilyHistory"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: FamilyMemberHistory</b><a name=\"father\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource FamilyMemberHistory &quot;father&quot; Version &quot;11&quot; Updated &quot;2022-11-17 22:02:53+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #SAeRVf4viOeLzIXn!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MCCFamilyHistory.html\">Multiple Chronic Condition Care Plan Family History</a></p></div><p><b>identifier</b>: id: 12345</p><p><b>status</b>: completed</p><p><b>patient</b>: <a href=\"Patient-cc-pat-pnoelle.html\">Patient/cc-pat-pnoelle: Patricia Noelle</a> &quot; NOELLE&quot;</p><p><b>date</b>: 2011-03-18</p><p><b>relationship</b>: father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH)</span></p><p><b>sex</b>: Male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender</a>#male)</span></p><h3>Conditions</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>ContributedToDeath</b></td><td><b>Onset[x]</b></td></tr><tr><td>*</td><td>Sudden Heart Attack <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#57054005 &quot;Acute Myocardial Infarction&quot;)</span></td><td>true</td><td>74 yr<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code a = 'a')</span></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "value" : "12345"
+  }],
+  "status" : "completed",
+  "patient" : {
+    "reference" : "Patient/cc-pat-pnoelle2",
+    "display" : "Patricia Noelle"
+  },
+  "date" : "2011-03-18",
+  "relationship" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "code" : "FTH",
+      "display" : "father"
+    }]
+  },
+  "sex" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/administrative-gender",
+      "code" : "male",
+      "display" : "Male"
+    }]
+  },
+  "condition" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "57054005",
+        "display" : "Acute Myocardial Infarction"
+      }],
+      "text" : "Sudden Heart Attack"
+    },
+    "contributedToDeath" : true,
+    "onsetAge" : {
+      "value" : 74,
+      "unit" : "yr",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "a"
+    }
+  }]
+},
+      
+              "request": {
+                "method": "POST",
+                "url": "Observation"
+              }
+          },
+		  {"resource":
+		  {
+  "resourceType" : "Procedure",
+  "id" : "Dialysis",
+  "meta" : {
+    "versionId" : "10",
+    "lastUpdated" : "2022-08-02T18:25:27.353+00:00",
+    "source" : "#a5RkjLxbIWy2ffIt",
+    "profile" : ["http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"Dialysis\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;Dialysis&quot; Version &quot;10&quot; Updated &quot;2022-08-02 18:25:27+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #a5RkjLxbIWy2ffIt!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MCCProcedure.html\">Multiple Chronic Condition Care Plan Procedure</a></p></div><p><b>status</b>: completed</p><p><b>code</b>: Hemodialysis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#302497006 &quot;Hemodialysis (procedure)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-cc-pat-pnoelle.html\">Patient/cc-pat-pnoelle: Patricia Noelle</a> &quot; NOELLE&quot;</p><p><b>performed</b>: 2012-08-05</p><p><b>recorder</b>: <a href=\"Practitioner-practitionerMCC-1.html\">Practitioner/practitionerMCC-1: Dr Henry Levin</a> &quot; LEVIN&quot;</p><p><b>asserter</b>: <a href=\"Practitioner-practitionerMCC-1.html\">Practitioner/practitionerMCC-1: Dr Henry Levin</a> &quot; LEVIN&quot;</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-practitionerMCC-1.html\">Practitioner/practitionerMCC-1: Dr Henry Levin</a> &quot; LEVIN&quot;</td></tr></table><p><b>reasonReference</b>: <a href=\"Condition-ConditionCKD.html\">Condition/ConditionCKD: Chronic Kidney Disease</a></p></div>"
+  },
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "302497006",
+      "display" : "Hemodialysis (procedure)"
+    }],
+    "text" : "Hemodialysis"
+  },
+  "subject" : {
+    "reference" : "Patient/cc-pat-pnoelle2",
+    "display" : "Patricia Noelle"
+  },
+  "performedDateTime" : "2012-08-05",
+  "recorder" : {
+    "reference" : "Practitioner/practitionerMCC-1",
+    "display" : "Dr Henry Levin"
+  },
+  "asserter" : {
+    "reference" : "Practitioner/practitionerMCC-1",
+    "display" : "Dr Henry Levin"
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/practitionerMCC-1",
+      "display" : "Dr Henry Levin"
+    }
+  }],
+  "reasonReference" : [{
+    "reference" : "Condition/ConditionCKD2",
+    "display" : "Chronic Kidney Disease"
+  }]
+},
+      
+              "request": {
+                "method": "POST",
+                "url": "Observation"
+              }
+          },
+		  {"resource":
+		  {
+  "resourceType" : "Practitioner",
+  "id" : "practitionerMCC-1",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "PractitionerMCC-1"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is a practitioner 1 example for the *US Core Practitioner Profile*."
+    }],
+    "versionId" : "2",
+    "lastUpdated" : "2022-04-21T20:04:20.632+00:00",
+    "source" : "#f2vqyIbNktHlvEKg",
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitionerMCC-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitionerMCC-1&quot; Version &quot;2&quot; Updated &quot;2022-04-21 20:04:20+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #f2vqyIbNktHlvEKg!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html\">US Core Practitioner Profile</a></p></div><p><b>identifier</b>: id: 9941339108, id: 254567</p><p><b>name</b>: Henry Levin </p><p><b>address</b>: 1003 Healthcare Drive Amherst MA 01002 (HOME)</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org.fhir/sid/us-npi",
+    "value" : "9941339108"
+  },
+  {
+    "system" : "http://www.acme.org/practitioners",
+    "value" : "254567"
+  }],
+  "name" : [{
+    "family" : "Levin",
+    "given" : ["Henry"],
+    "prefix" : ["Dr"]
+  }],
+  "address" : [{
+    "use" : "home",
+    "line" : ["1003 Healthcare Drive"],
+    "city" : "Amherst",
+    "state" : "MA",
+    "postalCode" : "01002"
+  }]
+},
+      
+              "request": {
+                "method": "POST",
+                "url": "Observation"
+              }
+          }
+    ]
+}

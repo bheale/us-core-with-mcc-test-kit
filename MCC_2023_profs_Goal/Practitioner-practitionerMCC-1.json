@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "practitionerMCC-1",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "PractitionerMCC-1"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is a practitioner 1 example for the *US Core Practitioner Profile*."
+    }],
+    "versionId" : "2",
+    "lastUpdated" : "2022-04-21T20:04:20.632+00:00",
+    "source" : "#f2vqyIbNktHlvEKg",
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitionerMCC-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitionerMCC-1&quot; Version &quot;2&quot; Updated &quot;2022-04-21 20:04:20+0000&quot; </p><p style=\"margin-bottom: 0px\">Information Source: #f2vqyIbNktHlvEKg!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html\">US Core Practitioner Profile</a></p></div><p><b>identifier</b>: id: 9941339108, id: 254567</p><p><b>name</b>: Henry Levin </p><p><b>address</b>: 1003 Healthcare Drive Amherst MA 01002 (HOME)</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org.fhir/sid/us-npi",
+    "value" : "9941339108"
+  },
+  {
+    "system" : "http://www.acme.org/practitioners",
+    "value" : "254567"
+  }],
+  "name" : [{
+    "family" : "Levin",
+    "given" : ["Henry"],
+    "prefix" : ["Dr"]
+  }],
+  "address" : [{
+    "use" : "home",
+    "line" : ["1003 Healthcare Drive"],
+    "city" : "Amherst",
+    "state" : "MA",
+    "postalCode" : "01002"
+  }]
+}

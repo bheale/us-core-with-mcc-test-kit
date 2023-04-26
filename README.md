@@ -9,6 +9,9 @@ Note, this repo is intended for the May 2023 Connectathon. There's no guarantee 
 May 2023 Connectathon that it will be kept current. However, come back frequently till then for
 updates. 
 
+We have included an example of a good outcome: exampleMCCGoalTestGood.pdf. We also include an 
+example of MCC Goal being used in the folder MCC_2023_profs_Goal.
+
 As we borrowed heavily from the US CORE test kits, we owe gratitude and thanks to the hard work of
 the US CORE crew (and Inferno team too).
 
